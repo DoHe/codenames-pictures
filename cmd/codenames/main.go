@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"os"
 	"time"
-	"github.com/banool/codenames"
+
+	"github.com/banool/codenames-pictures"
 )
 
 const DEFAULT_PORT = "9001"
@@ -30,7 +31,7 @@ func main() {
 		Server: http.Server{
 			Addr: ":" + port,
 		},
-        AssetsPath: "assets_codenames",
+		AssetsPath: "assets_codenames",
 	}
 	fmt.Printf("Starting server on port %s...\n", port)
 	if err := server.Start(); err != nil {

@@ -1,0 +1,1 @@
+web: go run cmd/codenames/main.go $PORT

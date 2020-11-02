@@ -18,8 +18,8 @@ import (
 )
 
 type Server struct {
-	Server http.Server
-    AssetsPath string
+	Server     http.Server
+	AssetsPath string
 
 	tpl    *template.Template
 	jslib  assets.Bundle
@@ -34,7 +34,6 @@ type Server struct {
 	games      map[string]*Game
 	imagePaths []string
 	mux        *http.ServeMux
-
 }
 
 func (s *Server) getGame(gameID, stateID string) (*Game, bool) {
