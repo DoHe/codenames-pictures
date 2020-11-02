@@ -1,1 +1,1 @@
-web: go run cmd/codenames/main.go $PORT
+web: bin/codenames $PORT
